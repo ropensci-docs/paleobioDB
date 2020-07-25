@@ -1,0 +1,12 @@
+{
+  "commit": {
+    "commit": "1e4af3f7c5e4361b7a7cd1ca67ff21b08653b787",
+    "author": "Javier González <javier.gon@protonmail.com>",
+    "time": "2020-07-25 22:10:58",
+    "files": 7,
+    "merge": true,
+    "message": "Merge pull request #47 from ropensci/cran_0.7\n\nVersion sent to CRAN for 0.7"
+  },
+  "remote": "https://github.com/ropensci/paleobioDB",
+  "pkg": "paleobioDB"
+}
