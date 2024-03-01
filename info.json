@@ -1,0 +1,12 @@
+{
+  "commit": {
+    "commit": "7136479a4739448c4ddf278cee62e40b4885a707",
+    "author": "Adrián Castro Insua <adrian.castro.insua@uvigo.gal>",
+    "time": "2024-02-28 11:01:06",
+    "files": 4,
+    "merge": false,
+    "message": "Submit version 1.0.0 to CRAN\n"
+  },
+  "repo": "https://github.com/ropensci/paleobioDB",
+  "pkg": "paleobioDB"
+}
