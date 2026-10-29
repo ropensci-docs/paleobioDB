@@ -1,0 +1,58 @@
+# Get information about multiple taxonomic opinions
+
+Returns information about multiple taxonomic opinions, selected
+according to criteria other than taxon name. This function could be used
+to query for all of the opinions attributed to a particular author, or
+to show all of the recently entered opinions.
+
+## Usage
+
+``` r
+pbdb_opinions(...)
+```
+
+## Arguments
+
+- ...:
+
+  Arguments passed to the API. See documentation for accepted parameters
+  at <https://paleobiodb.org/data1.2/opinions/list>. E.g.:
+
+  - `id`: Selects the opinions corresponding to the specified
+    identifier(s). You may provide more than one.
+
+  - `op_author`: Selects only opinions attributed to the specified
+    author. Note that the opinion author(s) may be different from the
+    author(s) of the reference from which the opinion was entered. This
+    parameter accepts last names only, no first initials. You can
+    specify more than one author name, in which case all opinions which
+    match any of these will be selected.
+
+  - `ops_created_before`: Select only records associated with taxa that
+    were created before the specified date or date/time. See
+    <https://paleobiodb.org/data1.2/datetime> for documentation on how
+    to specify date/time values.
+
+  - `ops_created_after`: Select only records associated with taxa that
+    were created on or after the specified date or date/time. See
+    <https://paleobiodb.org/data1.2/datetime> for documentation on how
+    to specify date/time values.
+
+  - `op_type`: You can use this parameter to retrieve all opinions, or
+    only the classification opinions, or only certain kinds of opinions.
+    The default is all opinions. Accepted values include: `"all"` (the
+    default), `"class"`, `"valid"`, `"accepted"`, `"junior"`,
+    `"invalid"`.
+
+## Value
+
+A data frame with information about the taxonomic opinions that match
+the query.
+
+## Examples
+
+``` r
+if (FALSE) { # \dontrun{
+  pbdb_opinions(op_pubyr = 1818)
+} # }
+```
